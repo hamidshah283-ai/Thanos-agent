@@ -1,0 +1,31 @@
+{
+    "AWSEBDockerrunVersion": "2",
+    "containerDefinitions": [
+      {
+        "name": "thanos-agent",
+        "image": "sphinx909/thanos-agent:latest",
+        "essential": true,
+        "memory": 512,
+        "portMappings": [
+          {
+            "hostPort": 80,
+            "containerPort": 8000
+          }
+        ],
+        "environment": [
+          {
+            "name": "OPENAI_API_KEY",
+            "value": "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"
+          },
+          {
+            "name": "ALPHA_VANTAGE_KEY", 
+            "value": "FV50HWQR0Z8P2OWS"
+          },
+          {
+            "name": "ZENROWS_KEY",
+            "value": "0f6d093d032b6b44c52c34efe4fb3350fe2d8531"
+          }
+        ]
+      }
+    ]
+  }
