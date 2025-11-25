@@ -1,0 +1,10 @@
+version: '4.51.0'
+services:
+  thanos-agent:
+    build: .
+    environment:
+      - OPENAI_API_KEY="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"
+      - ALPHA_VANTAGE_KEY="FV50HWQR0Z8P2OWS"
+      - ZENROWS_KEY="0f6d093d032b6b44c52c34efe4fb3350fe2d8531"
+    stdin_open: true
+    tty: true
